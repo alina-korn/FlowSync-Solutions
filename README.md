@@ -1,29 +1,29 @@
 # flow_sync_solutions
 
-FlowSync-Solutions/
-├── api-gateway/                # API Gateway (единая точка входа)
+FlowSync-Solutions/  
+├── api-gateway/                # API Gateway (единая точка входа)  
 │   ├── src/
-│   │   ├── main.py            # Логика маршрутизации и аутентификации
-│   │   └── config.py          # Конфигурация (адреса сервисов)
-│   └── Dockerfile             # Docker-файл для контейнеризации
-├── auth-service/              # Сервис авторизации
-│   ├── src/
-│   │   ├── main.py            # Логика API (логин, регистрация)
-│   │   ├── models.py          # Модели данных (User, Role)
-│   │   └── db.py              # Подключение к БД
-│   └── Dockerfile
-├── document-service/          # Сервис управления документами
-│   ├── src/
-│   │   ├── main.py            # Логика API (создание, получение документов)
-│   │   ├── models.py          # Модели (DocumentCreate, DocumentResponse)
-│   │   └── db.py              # Подключение к PostgreSQL
-│   └── Dockerfile
-├── workflow-service/          # Сервис согласования
-│   ├── src/
-│   │   ├── main.go           # Логика на Go (асинхронная обработка)
-│   │   └── kafka.go          # Интеграция с Kafka
-│   └── Dockerfile
-├── search-service/            # Сервис поиска
+│   │   ├── main.py            # Логика маршрутизации и аутентификации  
+│   │   └── config.py          # Конфигурация (адреса сервисов)  
+│   └── Dockerfile             # Docker-файл для контейнеризации  
+├── auth-service/              # Сервис авторизации  
+│   ├── src/  
+│   │   ├── main.py            # Логика API (логин, регистрация)  
+│   │   ├── models.py          # Модели данных (User, Role)  
+│   │   └── db.py              # Подключение к БД  
+│   └── Dockerfile  
+├── document-service/          # Сервис управления документами  
+│   ├── src/  
+│   │   ├── main.py            # Логика API (создание, получение документов)  
+│   │   ├── models.py          # Модели (DocumentCreate, DocumentResponse)  
+│   │   └── db.py              # Подключение к PostgreSQL  
+│   └── Dockerfile  
+├── workflow-service/          # Сервис согласования  
+│   ├── src/  
+│   │   ├── main.go           # Логика на Go (асинхронная обработка)  
+│   │   └── kafka.go          # Интеграция с Kafka  
+│   └── Dockerfile  
+├── search-service/            # Сервис поиска  
 │   ├── src/
 │   │   ├── main.py           # Логика поиска через Elasticsearch
 │   │   └── search.py         # Функции работы с Elasticsearch
